@@ -1,0 +1,138 @@
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Tinos', serif;
+}
+
+header {
+	height: 20vh;
+	background-color: #8ECAE6;
+	color: #023047;
+	display: flex;
+	font-weight: 600;
+}
+
+h1 {
+	align-self: center;
+	margin-left: 0.5em;
+	font-size: 3em;
+}
+
+#content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding-top: 5em;
+	gap: 5em;
+	background-color:white;
+
+}
+
+#searchForm {
+	background-color: #FB8500;
+	padding: 0.2em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+}
+
+#city {
+	border: none;
+	border-radius: 5px;
+	line-height: 1.5em;
+	background: none;
+	font-size: 1.5em;
+	color: #023047;
+
+}
+
+#search {
+	background: none;
+	border: none;
+	font-size: 1.8em;
+	color: #023047;
+}
+
+#dataDisplay {
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr;
+	grid-template-rows: 0.5fr 0.5fr;
+	padding: 0.9em;
+	border: 0.2em solid #023047;
+	border-radius: 28px 5px 28px 5px;
+	-webkit-box-shadow: 5px 5px 15px 5px #023047; 
+	box-shadow: 5px 5px 0px -0px #023047;
+	gap: 2em;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 2s, box-shadow 4s;
+}
+
+#cityCountry {
+	grid-row: 1/2;
+	grid-column: 1/2;
+	justify-self: center;
+	align-self: center;
+	font-size: 2em;
+}
+
+#cityName {
+	white-space: nowrap;
+	min-width: 50%;
+}
+
+#tempHumidity {
+	grid-row: 2/3;
+	grid-column: 1/2;
+	font-size: 1.5em;
+	display: grid;
+	gap: 0.5em;
+	grid-template-columns: 0.4fr 0.6fr;
+	grid-template-rows: 0.5fr 0.6fr;
+}
+
+#tempHumidity i {
+	justify-self: center;
+}
+
+#tempHumidity div {
+	justify-self: start;
+}
+
+#description {
+	grid-row: 2/3;
+	grid-column: 2/3;
+	text-align: center;
+	align-self: flex-start;
+	font-size: 1.1em;
+}
+
+#weatherIcon {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	background-color: #8ECAE6;
+	border-radius: 5px;
+	width: 100%;
+	justify-self: center;
+	align-self: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background-color: #023047;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	color: #8ECAE6;
+	text-align: center;
+}
+
+footer a {
+	color: #FB8500;
+}

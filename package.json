@@ -1,0 +1,30 @@
+{
+	"name": "weather-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack",
+		"watch": "webpack --watch",
+		"lint": "eslint ./"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"css-loader": "^5.2.6",
+		"eslint": "^7.27.0",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-plugin-import": "^2.23.3",
+		"html-loader": "^2.1.2",
+		"html-webpack-plugin": "^5.3.1",
+		"prettier": "2.3.0",
+		"style-loader": "^2.0.0",
+		"webpack": "^5.37.1",
+		"webpack-cli": "^4.7.0"
+	},
+	"dependencies": {
+		"eslint-config-prettier": "^8.3.0"
+	}
+}
